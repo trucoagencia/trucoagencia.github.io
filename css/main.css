@@ -341,7 +341,7 @@ p {
   -webkit-box-shadow: 0px 3px 7px 0px rgba(28,31,33,0.15);
   -moz-box-shadow: 0px 3px 7px 0px rgba(28,31,33,0.15);
   box-shadow: 0px 3px 7px 0px rgba(28,31,33,0.15);
-  min-height: 400px;
+  min-height: 200px;
 }
 .service-box img {
   margin-bottom: 30px;
@@ -706,6 +706,7 @@ footer h6 {
   .blog-box {
     margin: 0 auto;
     margin-bottom: 25px;
+    display: block;
   }
   .contact {
     text-align: center;
@@ -713,11 +714,13 @@ footer h6 {
 
 }
 @media (max-width: 768px) {
+  .service{
+    margin: auto;
+  }
   .hero h1 {
     font-size: 3.5rem;
   }
   .service-box {
-    padding: 20px 25px;
     margin: 0px;
   }
   .contact-nav a {
