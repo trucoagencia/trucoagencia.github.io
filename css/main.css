@@ -1,30 +1,4 @@
-/*-----------------------------------------------------------
-    Theme Name: Doob | Simple Agency HTML Template
-    Description: Simple Agency HTML Template
-    Author: Graphberry
-    Author URI: https://www.graphberry.com/
-    Version: 1.0
--------------------------------------------------------------*/
 
-
-/*-----------------------------------------------------------
-    1  General Styles
-    2  Typography
-    3  Buttons & Links
-    4  Header
-    5  Services
-    6  About
-    7  Portfolio
-    8  Blog
-    9  Contact
-    10 Footer
-    11 Responsive
--------------------------------------------------------------*/
-
-
-/*-----------------------------------------------------------
-    1. General Styles
--------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -123,14 +97,29 @@ h6,
   margin-bottom: 10px;
 }
 .about p {
-  color: #314584;
+  color: #1b1717;
 }
 p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #6E757A;
-  margin-bottom: 15px;
+  color: #1b1717;
+  margin-top: 15px;
   letter-spacing: 0.025em;
+}
+.loader{
+  position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#000;
+    opacity: 1;
+    transition:0.5s;
 }
 /*-----------------------------------------------------------
   3. Buttons & Links
@@ -147,13 +136,13 @@ p {
   font-size: 1.2rem;
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
-  color: #FF3946;
+  color: #ce1212;
 }
 .contact-btn i {
   font-size: 2rem;
   width: 100px;
   height: 100px;
-  color: #FF3946;
+  color: #ce1212;
 }
 .hero-btns a:first-child {
   background-color: #ce1212;
@@ -168,24 +157,24 @@ p {
 }
 .hero-btns a:first-child:hover {
   background-color: #fff;
-  border:2px solid #FF3946;
-  color: #314584;
+  border:2px solid #ce1212;
+  color: #1b1717;
   padding: 17px 35px;
   font-size: 1.0rem;
   border-radius: 30px;
   transition: all 0.3s ease;
 }
 .hero-btns a:last-child {
-  color: #314584;
+  color: #1b1717;
   padding: 17px 35px;
   font-size: 1.0rem;
 }
 .hero-btns a:last-child:hover {
-  color: #FF3946;
+  color: #ce1212;
   transition: all 0.3s ease;
 }
 .navbar-light .navbar-toggler {
-  color: #314584;
+  color: #1b1717;
   border: none;
 }
 .navbar-toggler {
@@ -208,7 +197,7 @@ p {
 .interactive-menu-button a span {
   height: 4px;
   position: absolute;
-  background: #314584;
+  background: #1b1717;
   text-indent: -999em;
   width: 100%;
   top: 6px;
@@ -218,7 +207,7 @@ p {
 .interactive-menu-button a span:after {
   content: '';
   height: 4px;
-  background: #314584;
+  background: #1b1717;
   width: 100%;
   position: absolute;
   top: -6px;
@@ -240,7 +229,7 @@ p {
 .navbar-nav .dropdown-menu {
   text-align: center;
   border: 0;
-  background-color: #314584;
+  background-color: #1b1717;
 }
 .navbar-nav .dropdown-menu a {
   color: #fff;
@@ -249,7 +238,7 @@ p {
   margin: 10px 0px;
 }
 .dropdown-item:focus, .dropdown-item:hover {
-  color: #FF3946!important;
+  color: #ce1212!important;
   text-decoration: none;
   background-color: #314584;
 }
@@ -258,7 +247,7 @@ p {
   font-size: 0.8rem!important;
 }
 .service-btn a:hover {
-  color: #FF3946!important;
+  color: #ce1212!important;
 }
 .more-btn {
   text-align: center;
@@ -307,7 +296,7 @@ p {
   padding: 0 10px;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  color: #FF3946;
+  color: #ce1212;
 }
 .hero img {
   position: absolute;
@@ -451,10 +440,14 @@ p {
   padding-bottom: 100px;
 }
 .blog-box {
-  background-color: #fff;
-  min-height: 330px;
+  background-color: rgba(0,0,0,0);
+  min-height: 600px;
   max-width: 370px;
-  padding: 50px 25px;
+  border-radius: 15px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 25px;
   -webkit-box-shadow: 0px 3px 7px 0px rgba(28,31,33,0.15);
   -moz-box-shadow: 0px 3px 7px 0px rgba(28,31,33,0.15);
   box-shadow: 0px 3px 7px 0px rgba(28,31,33,0.15);
@@ -466,7 +459,7 @@ p {
 }
 .blog-box p:nth-child(3) {
   font-size: 1.2rem;
-  color: #314584;
+  color: #1b1717;
 }
 .slick-prev {
   position: absolute;
@@ -489,7 +482,7 @@ p {
   transition: all 0.3s ease;
 }
 .blog-first {
-  background-color: #FF3946;
+  background-color: #ce1212;
 }
 .blog-first h6 {
   color: #fff;
@@ -507,7 +500,7 @@ p {
   display: none;
 }
 #blog-btn {
-  color: #FF3946;
+  color: #ce1212;
   font-size: 1.2rem;
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
@@ -579,7 +572,7 @@ footer h5{
   padding-bottom: 10px;
 }
 footer h3{
-  color: #FF3946;
+  color: #ce1212;
   font-size: 3rem;
   margin-bottom: 30px;
 }
@@ -593,7 +586,7 @@ footer h3{
   padding: 20px 20px;
 }
 .contact-nav a:hover {
-  color: #FF3946;
+  color: #ce1212;
 }
 footer h6 {
   color: #fff;
@@ -611,7 +604,7 @@ footer h6 {
   margin: 0px 30px;
 }
 .social li a:hover {
-  color: #FF3946;
+  color: #ce1212;
   transition: all 0.3s ease;
 }
 /*-----------------------------------------------------------

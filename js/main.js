@@ -1,3 +1,10 @@
+window.addEventListener("load", function(event) {
+  setTimeout(function(){
+document.querySelector(".loader").style="opacity:0;z-index:-99"
+},3000)
+});
+
+
 $('.interactive-menu-button a').click(function() {
   $(this).toggleClass('active');
 });
@@ -9,9 +16,9 @@ $('.more-btn').click(function() {
   $('#hiden-gallery').toggleClass('hide');
   $('#hiden-gallery').toggleClass('open');
   if ( $('#hiden-gallery').is( ".open" ) ) {
-    $(".more-btn-inside").text("Ver menos.");
+    $(".more-btn-inside").text("Ver menos");
   }else {
-    $(".more-btn-inside").text("Ver más.");
+    $(".more-btn-inside").text("Ver más");
   }
 });
 
@@ -52,8 +59,8 @@ $('#blog-btn').click(function() {
   $('.hiden-blog').toggleClass('hide-blog');
   $('.hiden-blog').toggleClass('open-blog');
   if ( $('.hiden-blog').is( ".open-blog" ) ) {
-    $("#blog-btn").text("Show Less Stories.");
+    $("#blog-btn").text("Ver menos");
   }else {
-    $("#blog-btn").text("Show More Stories.");
+    $("#blog-btn").text("Ver más");
   }
 });
