@@ -4,6 +4,18 @@ document.querySelector(".loader").style="opacity:0;z-index:-99"
 },3000)
 });
 
+function portfolio(){
+  var works = $(".work-box");
+  works.click(function(){
+    var id = $(this).children("input").val();
+     var video = document.querySelector(`#${id}`);
+     video.style="opacity:1;z-index:99";
+     $(document).on("scroll", function(){
+       video.style="opacity:0;z-index:-99";
+     });
+  });
+}
+portfolio();
 
 $('.interactive-menu-button a').click(function() {
   $(this).toggleClass('active');

@@ -1,4 +1,15 @@
-
+@font-face {
+  font-family: "Lovelo Line Light";
+  src: url("fonts/Lovelo Line Light.otf");
+}
+@font-face {
+  font-family: "Lovelo Black";
+  src: url("fonts/Lovelo Black.otf");
+}
+@font-face {
+  font-family: "Lovelo Line Bold";
+  src: url("fonts/Lovelo Line Bold.otf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -54,7 +65,7 @@ h6,
 ------------------------------------------------------------*/
 body {
   color: #314584;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Lovelo Black', sans-serif;
   font-size: 14px;
   font-weight: 400;
   overflow-x: hidden;
@@ -121,6 +132,24 @@ p {
     opacity: 1;
     transition:0.5s;
 }
+.video{
+  position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0,0,0,0.5);
+    opacity: 0;
+    transition:0.5s;
+}
+.video iframe{
+  border-radius: 15px;
+}
 /*-----------------------------------------------------------
   3. Buttons & Links
 -------------------------------------------------------------*/
@@ -134,7 +163,7 @@ p {
   background-color: #fff;
   border-radius: 3px;
   font-size: 1.2rem;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Lovelo Line Light', sans-serif;
   font-weight: 600;
   color: #ce1212;
 }
@@ -367,6 +396,9 @@ p {
   width: 370px;
   height: auto;
 }
+.work-box:hover{
+  cursor: pointer;
+}
 /* Portfolio Gallery Hover */
 .photobox{
   display: inline-block;
@@ -413,7 +445,7 @@ p {
   transform: translate(-50%, 200%);
   z-index: 3;
   color: #fff;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Lovelo Line Light', sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
 }
@@ -502,9 +534,9 @@ p {
 #blog-btn {
   color: #ce1212;
   font-size: 1.2rem;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Lovelo Line Light', sans-serif;
   font-weight: 600;
-  background-color: #fff;
+  background-color: #f2f2f2;
   border: none;
   margin-top: 20px;
 }
