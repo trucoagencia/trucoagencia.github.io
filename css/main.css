@@ -65,7 +65,7 @@ h6,
 ------------------------------------------------------------*/
 body {
   color: #314584;
-  font-family: 'Lovelo Black', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
   overflow-x: hidden;
@@ -163,7 +163,7 @@ p {
   background-color: #fff;
   border-radius: 3px;
   font-size: 1.2rem;
-  font-family: 'Lovelo Line Light', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: #ce1212;
 }
@@ -534,7 +534,7 @@ p {
 #blog-btn {
   color: #ce1212;
   font-size: 1.2rem;
-  font-family: 'Lovelo Line Light', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   background-color: #f2f2f2;
   border: none;
