@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Lovelo Line Light";
-  src: url("fonts/Lovelo Line Light.otf");
+  src: url("fonts/LoveloLineLight.otf");
 }
 @font-face {
   font-family: "Lovelo Black";
-  src: url("fonts/Lovelo Black.otf");
+  src: url("fonts/LoveloBlack.otf");
 }
 @font-face {
   font-family: "Lovelo Line Bold";
-  src: url("fonts/Lovelo Line Bold.otf");
+  src: url("fonts/LoveloLineBold.otf");
 }
 * {
   margin: 0;
@@ -147,7 +147,7 @@ p {
     opacity: 0;
     transition:0.5s;
 }
-.video iframe{
+.video video{
   border-radius: 15px;
 }
 /*-----------------------------------------------------------

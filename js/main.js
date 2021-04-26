@@ -9,6 +9,7 @@ function portfolio(){
   works.click(function(){
     var id = $(this).children("input").val();
      var video = document.querySelector(`#${id}`);
+     video.innerHTML = `<video width='30%' height='auto' controls><source src='videos/${id}.mp4' type='video/mp4'></video>`;
      video.style="opacity:1;z-index:99";
      $(document).on("scroll", function(){
        video.style="opacity:0;z-index:-99";
