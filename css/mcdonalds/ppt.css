@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #da291c;
+  }
+  .countdown{
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    width:30vw;
+    margin: 15px auto;
+    padding:10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .logo-fondo{
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+  }
+  .main {
+    margin-top: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .main div {}
+  
+  .playerChoise {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffc72c;
+    width: 35%;
+    margin: 2.5%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .playerChoise img {
+    width: 50px;
+  }
+
+  .computerChoise {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #27251f;
+    width: 35%;
+    margin: 2.5%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .computerChoise img{
+    width: 50px;
+  }
+  .option {
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 70px;
+    height: 70px;
+    margin: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border: 3px solid transparent;
+  }
+  
+  .playerChoise .option:hover {
+    border: 3px solid black;
+  }
+  
+  .option i {
+    font-size: 50px;
+  }
+  
+  .score {
+    width: 15%;
+    margin: 2.5%;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #27251f;
+    color: #FFF;
+    border-radius: 50%;
+  }
+  
