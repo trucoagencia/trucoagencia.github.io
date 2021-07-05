@@ -4,6 +4,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #da291c;
   }
+
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #da291c;
+    border-color: black;
+  }
   .countdown{
     text-align: center;
     color: #fff;
@@ -18,17 +23,33 @@ body {
   }
   .logo-fondo{
     position: fixed;
-    width: 100%;
+    width: 90%;
+    margin: 5%;
     z-index: -1;
   }
   .main {
-    margin-top: 30vh;
+    height: 25vh;
+    margin-top: 25vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-  .main div {}
+  .instrucciones-body{
+    padding: 25px;
+  }
+  .instrucciones-body img{
+    width: 100%;
+  }
+
+  .instrucciones-footer {
+    padding: 10px;
+    text-align: center;
+  }
+  .instrucciones-boton{
+    text-align: center;
+    width: 100%;
+  }
   
   .playerChoise {
     display: flex;
@@ -63,6 +84,7 @@ body {
   .computerChoise img{
     width: 50px;
   }
+
   .option {
     background-color:rgba(0, 0, 0, 0.5);
     width: 70px;
@@ -85,13 +107,14 @@ body {
   }
   
   .score {
-    width: 15%;
+    width: 20vh;
+    height: 15vh;
     margin: 2.5%;
     font-size: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #27251f;
+    background-color: rgba(0, 0, 0, 0.5);;
     color: #FFF;
     border-radius: 50%;
   }

@@ -1,5 +1,9 @@
 window.addEventListener('load', function() {
 
+    function activarInstrucciones(){
+      $('#instruccionesBoton').trigger("click");
+    }
+
     function getComputerChoise() {
       var computerChoise = Math.round(Math.random() * (3 - 1) + parseInt(1));
   
@@ -123,6 +127,7 @@ window.addEventListener('load', function() {
     }
   
     var totalTime = 10;
+
     function updateClock() {
       document.getElementById('countdown').innerHTML = totalTime;
       var stopper = document.querySelector("input[name='stopper']").value;
@@ -145,7 +150,7 @@ window.addEventListener('load', function() {
   
   
     playerOptions();
-    updateClock();
-  
+    activarInstrucciones();
+
   })
   

@@ -2,33 +2,49 @@
 <html lang="en" dir="ltr">
 <head><meta charset="utf-8">
   <title>Piedra - Papel - Tijera</title>
+  <link rel="icon" type="image/png" href="../images/logo.svg" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="../css/mcdonalds/ppt.css">
   <link rel="stylesheet" href="../css/fontawesome/css/all.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <script src="../js/mcdonalds/ppt.js"></script>
 </head>
 <body>
     <img src="..\images\mcdonalds\logo.png" alt="mcdonalds logo." class="logo-fondo">
-  <div class="countdown">
-    <h1>Elije una opción</h1>
-    <h1><span id="countdown"></span></h1>
-    <input type="hidden" name="stopper" value="0">
-  </div>
-  <div class="main">
-    <div class="playerChoise">
-      <div class="option" style="cursor:pointer;">
-        <img src="..\images\mcdonalds\ppt\happy-1.png" alt="">
-        <input type="hidden" name="rock" value="1">
-      </div>
-      <div class="option" style="cursor:pointer;">
-        <img src="..\images\mcdonalds\ppt\happy-3.png" alt="">
-        <input type="hidden" name="paper" value="2">
-      </div>
-      <div class="option" style="cursor:pointer;">
-        <img src="..\images\mcdonalds\ppt\happy-2.png" alt="">
-        <input type="hidden" name="scissor" value="3">
-      </div>
+    <!-- Modal -->
+    <div class="modal fade" id="instrucciones" tabindex="-1" role="dialog" aria-labelledby="instruccionesTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: #27251f;">
+                <div class="instrucciones-body">
+                    <img src="..\images\mcdonalds\ppt\instrucciones.png" alt="piedra.">
+                </div>
+                <div class="instrucciones-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" >¡A jugar!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="countdown">
+        <h1>Elije una opción</h1>
+        <h1><span id="countdown">10</span></h1>
+        <input type="hidden" name="stopper" value="0">
+    </div>
+    <div class="main">
+        <div class="playerChoise">
+        <div class="option" style="cursor:pointer;">
+            <img src="..\images\mcdonalds\ppt\happy-1.png" alt="piedra.">
+            <input type="hidden" name="rock" value="1">
+        </div>
+        <div class="option" style="cursor:pointer;">
+            <img src="..\images\mcdonalds\ppt\happy-3.png" alt="papel.">
+            <input type="hidden" name="paper" value="2">
+        </div>
+        <div class="option" style="cursor:pointer;">
+            <img src="..\images\mcdonalds\ppt\happy-2.png" alt="tijera.">
+            <input type="hidden" name="scissor" value="3">
+        </div>
     </div>
     <div class="score">
       <div class="playerScore">
@@ -43,19 +59,29 @@
     </div>
     <div class="computerChoise">
       <div class="option">
-        <img src="..\images\mcdonalds\ppt\happy-1.png" alt="">
+        <img src="..\images\mcdonalds\ppt\happy-1.png" alt="piedra.">
         <input type="hidden" name="rock" value="1">
       </div>
       <div class="option">
-        <img src="..\images\mcdonalds\ppt\happy-3.png" alt="">
+        <img src="..\images\mcdonalds\ppt\happy-3.png" alt="papel.">
         <input type="hidden" name="paper" value="2">
       </div>
       <div class="option">
-        <img src="..\images\mcdonalds\ppt\happy-2.png" alt="">
+        <img src="..\images\mcdonalds\ppt\happy-2.png" alt="tijera.">
         <input type="hidden" name="scissor" value="3">
       </div>
     </div>
   </div>
+  <div class="instrucciones-boton">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#instrucciones" id="instruccionesBoton">
+    Ver instrucciones
+    </button>
+  </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="../js/mcdonalds/ppt.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,124 @@
+.ch-info{
+	position: absolute;
+	width: 165px;
+	height: 226.11px;
+	cursor: pointer;
+
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+}
+
+.ch-img {
+	background-image: url("../../../images/mcdonalds/memomc/carta.png");
+	background-size: contain;
+	border-radius: 10px;
+}
+
+.rota {
+	-webkit-transform: rotate3d(0,1,0,-180deg);
+	-moz-transform: rotate3d(0,1,0,-180deg);
+	-o-transform: rotate3d(0,1,0,-180deg);
+	-ms-transform: rotate3d(0,1,0,-180deg);
+	transform: rotate3d(0,1,0,-180deg);
+}
+
+.mcd-container .mcd-download-app__content-header{
+	background-color: #ffbc0d;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 15px 15vh;
+	margin-top: 10vh;
+}
+.mcd-image{
+	width: 123px;
+    min-width: 123px;
+    margin-right: 24px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+
+.mcd-image img {
+	width: 100%;
+}
+.mcd-download-app__content-text{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.mcd-download-app__content-text h2{
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.mcd-download-app__content-text p{
+	font-size: 16px;
+}
+
+.mcd-download-app__content-action{
+	font-family: 'Speedee', Arial, Helvetica, sans-serif;
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 5px;
+}
+.is-hidden-desktop{
+	display: none;
+}
+
+
+@media (max-width:768px){
+	
+	.ch-grid li {
+		width: 100px;
+		height: 100px;
+	}
+	
+	.ch-info{
+		width: 85px;
+		height: 116.48px;
+	}
+
+	.is-hidden-desktop{
+		display: block;
+	}
+
+	.is-hidden-touch{
+		display: none;
+	}
+
+	.mcd-download-app__content-action{
+		width: 60%;
+		margin: 0 20%;
+		text-align: center;
+	}
+	.mcd-download-app__drops{
+		display: flex;
+		align-items: right;
+		justify-content: center;
+	}
+	.mcd-container{
+		background-color: #ffbc0d;
+	}
+}
+
+@media (max-width:425px){
+	.ch-grid li {
+		width: 80px;
+		height: 80px;
+	}
+
+	.ch-info{
+		width: 65px;
+		height: 89px;
+	}
+}
