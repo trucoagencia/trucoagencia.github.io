@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Speedee";
+  src: url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.eot");
+  /* IE9*/
+  src: url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.woff2") format("woff2"),
+    /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.woff") format("woff"),
+    /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.ttf") format("truetype"),
+    /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.svg#Speedee") format("svg");
+  /* iOS 4.1- */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Speedee', sans-serif;
+  background-color: #fdbb0b;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+h1{
+  margin: 5vh auto;
+}
+h3{
+  color: #fff;
+  margin-top: 15px;
+}
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fefefe;
+}
+.video-container video {
+  border: 0;
+  width: 100%;
+}
+#saltearBoton{
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  cursor: pointer;
+  right: 2vh;
+  bottom: 2vh;
+}
+
+.games{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto 15%;
+  width: 70%;
+}
+
+.game{
+  background: #27251f;
+  width: 250px;
+  height: 250px;
+  margin: 3vh;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 12px 12px 20px rgba(0, 0, 0, .2);
+  cursor: pointer;
+}
+.game:hover{
+  transform: translate(-1px,-1px);
+  transition: .8s;
+}
+.game a img{
+  width: 40%;
+}
+
+@media (min-width:800px) {
+  .games{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto 5%;
+  }
+  .game{
+    width: 50vh;
+    height:50vh;
+    padding: 15px;
+  }
+}
