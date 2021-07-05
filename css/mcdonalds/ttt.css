@@ -1,1 +1,155 @@
+@font-face {font-family: "Speedee";
+    src: url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.eot"); /* IE9*/
+    src: url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.woff2") format("woff2"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.woff") format("woff"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.svg#Speedee") format("svg"); /* iOS 4.1- */ 
+}
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Speedee', sans-serif;
+    background-color: #27251f;
+    color: #ffc72c
+  }
+  
+  .main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+  }
+  .main h1{
+    transition: 1s;
+  }
+  .options{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    transition: 0.5s;
+  }
+  .options img{
+    width: 40vh;
+    cursor: pointer;
+  }
+  .table{
+    opacity: 0;
+    transition: 1.5s;
+  }
+  .table table td{
+    width:100px;
+    height: 100px;
+  }
+  
+  .table table td .fields{
+    border: 3px solid #ffc72c;
+    width:100%;
+    height:100%;
+    text-align:center;
+    font-size:65px;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .table table td .fields img{
+    width: 65px;
+  }
+  .fields:hover{
+    background-color: rgba(255,255,255,0.5);
+  
+  }
+
+  .mcd-container .mcd-download-app__content-header{
+    background-color: #ffbc0d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 15vh;
+    margin-top: 10vh;
+  }
+  .mcd-image{
+    width: 123px;
+      min-width: 123px;
+      margin-right: 24px;
+      padding-top: 16px;
+      padding-bottom: 8px;
+  }
+  
+  .mcd-image img {
+    width: 100%;
+  }
+  .mcd-download-app__content-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .mcd-download-app__content-text h2{
+    font-size: 36px;
+    font-family: 'Speedee';
+  }
+  
+  .mcd-download-app__content-text p{
+    font-size: 16px;
+  }
+  
+  .mcd-download-app__content-action{
+    font-family: 'Speedee', Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  .is-hidden-desktop{
+    display: none;
+  }
+
+  @media (max-width:768px){
+	
+    .ch-grid li {
+      width: 100px;
+      height: 100px;
+    }
+    
+    .ch-info{
+      width: 85px;
+      height: 116.48px;
+    }
+  
+    .is-hidden-desktop{
+      display: block;
+    }
+  
+    .is-hidden-touch{
+      display: none;
+    }
+  
+    .mcd-download-app__content-action{
+      width: 60%;
+      margin: 0 20%;
+      text-align: center;
+    }
+    .mcd-download-app__drops{
+      display: flex;
+      align-items: right;
+      justify-content: center;
+    }
+    .mcd-container{
+      background-color: #ffbc0d;
+    }
+  }
+  
+  @media (max-width:425px){
+    .ch-grid li {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .ch-info{
+      width: 65px;
+      height: 89px;
+    }
+  }
