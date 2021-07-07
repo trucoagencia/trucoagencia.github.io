@@ -83,7 +83,12 @@ h3{
 .game a img{
   width: 40%;
 }
-
+@media (max-width:600px) {
+    #saltearBoton{
+      right: 2vh;
+      bottom: 10vh;
+    }
+}
 @media (min-width:800px) {
   .games{
     flex-direction: row;
