@@ -3,6 +3,18 @@ body{
   background: #fff;
 }
 
+#home{
+  background-color: #27251f;
+  color:#fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+  position: fixed;
+  cursor: pointer;
+  left: 2vh;
+  top: 2vh;
+}
+
 .header-banner{
   width: 40%;
   display: block;
