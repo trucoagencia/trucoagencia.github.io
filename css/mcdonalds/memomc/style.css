@@ -4,8 +4,14 @@
     url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.woff2") format("woff2"), /* chrome firefox */
     url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.woff") format("woff"), /* chrome firefox */
     url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-    url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.svg#Speedee") format("svg"); /* iOS 4.1- */ 
+    url("https://db.onlinewebfonts.com/t/827d075b1538829cc0db75696e4d5fa2.svg#Speedee") format("svg"); /* iOS 4.1- */
 }
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Speedee', sans-serif;
+}
+
 
 .ch-info{
 	position: absolute;
@@ -86,12 +92,12 @@
 
 
 @media (max-width:768px){
-	
+
 	.ch-grid li {
 		width: 100px;
 		height: 100px;
 	}
-	
+
 	.ch-info{
 		width: 85px;
 		height: 116.48px;
@@ -119,7 +125,13 @@
 		background-color: #ffbc0d;
 	}
 }
-
+@media (max-width:320px){
+#home{
+  text-align: center;
+  width: 25vw;
+  font-size: 3.5vw;
+}
+}
 @media (max-width:425px){
 	.ch-grid li {
 		width: 80px;

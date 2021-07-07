@@ -1,12 +1,16 @@
 window.addEventListener('load', function() {
 
+    document.querySelector('#home').addEventListener('click', function(){
+      window.location="https://trucoagencia.github.io/mcdonalds";
+    });
+
     function activarInstrucciones(){
       $('#instruccionesBoton').trigger("click");
     }
 
     function getComputerChoise() {
       var computerChoise = Math.round(Math.random() * (3 - 1) + parseInt(1));
-  
+
       var options = document.querySelector('.computerChoise').querySelectorAll('.option');
       // first child of the parent node
       let sibling = options[computerChoise - 1].parentNode.firstChild;
@@ -18,22 +22,22 @@ window.addEventListener('load', function() {
         }
         sibling = sibling.nextSibling;
       }
-  
+
       for (var i = 0; i < siblings.length; i++) {
         siblings[i].style.opacity = 0;
       }
       var position = options[computerChoise - 1].getBoundingClientRect();
       var translate = options[1].getBoundingClientRect().left - position.left;
       options[computerChoise - 1].style.transform = `translate(${translate}px,0)`;
-  
+
       return computerChoise;
-  
+
     }
-  
+
     function getResult(computerChoise, playerChoise, optionPosition) {
       var result = computerChoise - playerChoise;
       if (computerChoise == playerChoise) {
-  
+
       } else if (result == 1 || result == -2) {
         var score = parseInt(document.querySelector('.computerScore').innerText);
         score++;
@@ -47,7 +51,7 @@ window.addEventListener('load', function() {
         winner();
         // alert('¡Ganaste!')
       }
-  
+
       setTimeout(function() {
         var options = document.querySelectorAll('.option');
         for (var i = 0; i < options.length; i++) {
@@ -59,9 +63,9 @@ window.addEventListener('load', function() {
         document.querySelector("input[name='stopper']").value= 0;
         updateClock();
       }, 1000)
-  
+
     }
-  
+
     function playerOptions() {
       var options = document.querySelector('.playerChoise').querySelectorAll('.option');
       for (var i = 0; i < options.length; i++) {
@@ -90,14 +94,14 @@ window.addEventListener('load', function() {
           setTimeout(function() {
             getResult(computerChoise, playerChoise, optionPosition);
           }, 650);
-  
+
         }
       }
     }
-  
+
     function winner(){
       var winner = document.querySelector(".score").querySelectorAll("h3");
-  
+
       for (var i = 0; i < winner.length; i++) {
         if (parseInt(winner[i].innerHTML) == 10) {
           if (i == 0) {
@@ -114,18 +118,18 @@ window.addEventListener('load', function() {
         }
       }
     }
-  
+
     function restart(){
       var score = document.querySelector(".score").querySelectorAll("h3");
-  
+
       for (var i = 0; i < score.length; i++) {
         score[i].innerHTML = 0;
       }
-  
+
       totalTime = 10;
       return totalTime;
     }
-  
+
     var totalTime = 10;
 
     function updateClock() {
@@ -147,10 +151,9 @@ window.addEventListener('load', function() {
         },1000);
       }
     }
-  
-  
+
+
     playerOptions();
     activarInstrucciones();
 
   })
-  

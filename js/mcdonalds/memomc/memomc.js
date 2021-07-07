@@ -1,5 +1,9 @@
 window.addEventListener("load",function(){
 
+  document.querySelector('#home').addEventListener('click', function(){
+    window.location="https://trucoagencia.github.io/mcdonalds";
+  });
+  
   var memos = $(".image");
   var memosArray = Array.from(memos);
   var imagenes = [0,0,0,0,0,0];

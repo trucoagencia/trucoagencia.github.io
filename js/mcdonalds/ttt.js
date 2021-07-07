@@ -1,4 +1,8 @@
 window.addEventListener('load', function() {
+  document.querySelector('#home').addEventListener('click', function(){
+    window.location="https://trucoagencia.github.io/mcdonalds";
+  });
+
     playerCharacter();
     function playerCharacter(){
       var options = document.querySelector(".options").querySelectorAll("img");
@@ -9,23 +13,23 @@ window.addEventListener('load', function() {
           document.querySelector(".main").querySelector("H2").style.opacity = 0;
           document.querySelector(".main").querySelector("H1").style.transform = `translate(0px,10vh)`;
           document.querySelector(".options").style.opacity = 0;
-          table.style.transform = `translate(0px,-42vh)`;
+          table.style.transform = `translate(0px,-10vh)`;
           if (this.parentNode.querySelector("input").value == 0) {
             var player = "<img src='../images/mcdonalds/ttt/happy-1.png' alt='Cajita feliz.' >";
-            var computer = "<img src='../images/mcdonalds/ttt/cross.png' alt='Ilustración de una cruz.'>";
+            var computer = "<img src='../images/mcdonalds/logo.png' alt='Ilustración de una cruz.'>";
           } else {
             var computer = "<img src='../images/mcdonalds/ttt/happy-1.png' alt='Cajita feliz.'>";
-            var player = "<img src='../images/mcdonalds/ttt/cross.png' alt='Ilustración de una cruz.'>";
+            var player = "<img src='../images/mcdonalds/logo.png' alt='Ilustración de una cruz.'>";
           }
           playerChoise(player,computer);
         }
       }
     }
-  
+
     function playerChoise(player,computer){
-  
+
       var options = document.querySelectorAll(".fields");
-  
+
       for (var i = 0; i < options.length; i++) {
         options[i].onclick = function(){
           var optionId = parseInt(this.parentElement.id);
@@ -105,7 +109,7 @@ window.addEventListener('load', function() {
                 return;
               }
             }
-  
+
             if(empate(optionValues,optionValuesComputer)){
               for (var i = 0; i < options.length; i++) {
                 while (options[i].firstChild) {
@@ -119,8 +123,8 @@ window.addEventListener('load', function() {
         }
       }
     }
-  
-  
+
+
     function empate(computerValues,playerValues){
       var fieldsComplete = true;
       var fields = document.querySelectorAll(".fields");
@@ -140,7 +144,7 @@ window.addEventListener('load', function() {
         return false;
       }
     }
-  
+
     function computerChoise(computer){
       var options = document.querySelectorAll(".fields");
       var optionValuesPlayer = document.querySelectorAll("input[name=playerWin]");
@@ -149,7 +153,7 @@ window.addEventListener('load', function() {
       var computerChoiseToWin = [[0,1,2],[3,4,5],[6,7,8],[6,4,2],[6,3,0],[7,4,1],[8,5,2],[8,4,0]]
       var computerChoise = [[0,4,7],[0,5],[0,3,6],[1,4],[1,3,5,7],[1,6],[2,3,4],[2,5],[2,6,7]];
       var randomChoise = false;
-  
+
         if (options[4].hasChildNodes() === false) {
           options[4].innerHTML = computer;
           for (var x = 0; x < computerChoise[4].length; x++) {
@@ -157,7 +161,7 @@ window.addEventListener('load', function() {
             optionValue.value++;
           }
         } else {
-          for (var j = 0; j < optionValuesPlayer.length; j++) {
+          for (var j = 0; j < optionValuesComputer.length; j++) {
             console.log(optionValuesComputer[j]);
             if (optionValuesComputer[j].value == 2){
             var computerOptions = computerChoiseToWin[j];
@@ -250,6 +254,5 @@ window.addEventListener('load', function() {
             return;
           }
     }
-  
+
   })
-  
